@@ -8,4 +8,14 @@ export default class Song {
         this.price = song.collectionPrice
         this.preview = song.previewUrl
     }
+
+    get resultTemplate() {
+        return `<div class="col-6"> 
+        <img src = "${this.albumArt}">
+        <h4>${this.title}, ${this.artist}</h4> 
+        <audio controls>
+        <source src="${this.preview}">
+        </audio> 
+        </div>`
+    }
 }

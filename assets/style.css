@@ -1,0 +1,30 @@
+*{
+  outline: 1px solid #ffffff;
+}
+
+body{
+  background: rgb(34,123,195);
+background: linear-gradient(0deg, rgba(34,123,195,1) 0%, rgba(167,95,199,1) 50%, rgba(253,115,45,1) 100%);
+background-attachment: fixed;
+}
+
+.current-song {
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  border: 1px solid #0a2b1d;
+  height:100%;
+   }
+
+.music-selector {
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  height:100%;
+   }
+
+.song-list {
+
+  border: 1px solid #0a2b1d;
+  height:100%;
+   }
