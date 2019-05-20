@@ -8,42 +8,48 @@
     <title>Music Is Fun!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
+
+<!--.loadenvoke -->
+
 <body class="container-fluid">
     <header class="container-fluid">
         <div class="row text-center">
-            <div class="col-12">Header</div>
+            <div class="col-12 mt-5"></div>
         </div>
     </header>
     <main class="container-fluid">
         <div class="row text-center">
-            <div class="col-5 music-selector">
-                <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                    <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                        <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-                    </div>
-                </form>
+            <div class="col-5 music-selector mt-5">
+                <div class="row mt-5 justify-content-center">
+                    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="artist" placeholder="Artist Name">
+                            <button type="submit" class="btn btn-primary rounded-circle ml-2" id="get-music-button"><i
+                                    class="fas fa-compact-disc"></i></button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="col-7 song-list" id="songs">
                 <div class="row" id="song-list">
-
+                    <h3 class="quote">“Music gives a soul to the universe, wings to the mind, flight to the imagination
+                        and life to
+                        everything.” ― Plato</h3>
                 </div>
-                <!--SONGS ADDED DYNAMICALLY HERE-->
             </div>
         </div>
 
         </div>
     </main>
-    <footer class="container-fluid">
-        <div class="row text-center">
-            <div class="col-12">Footer</div>
-        </div>
-    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="app/main.js"></script>
 </body>
